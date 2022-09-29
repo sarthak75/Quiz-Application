@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+* {box-sizing: border-box;}
+
+input[type=text],select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  width: 50%;
+  margin-left: 400px;
+  border-radius: 5px;
+  background-color: lightgrey;
+  padding: 20px;
+  border: 5px dotted red;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <h2 style="text-align: center;">PLEASE ENTER YOUR DETAILS FOR THE QUIZ</h2>
+  <form action="index.html">
+    <label for="fname">ENTER YOUR FIRST NAME</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name">
+
+    <label for="fname">ENTER YOUR LAST NAME</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your last name">
+
+    <label for="email">ENTER YOUR EMAIL</label>
+    <input type="text" id="email" name="email" placeholder="Your email">
+
+
+    <label for="country">COUNTRY</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">Australia</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">ADDRESS</label>
+    <textarea id="subject" name="subject" placeholder="Your address" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
